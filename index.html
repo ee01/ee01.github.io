@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>多彩的E神 by邱沼懿</title>
+<meta name="description" content="展示邱沼懿的丰富多彩的不同人格"/>
+<meta name ="keywords" content="【疯·神】工作室,疯神工作室,邱沼懿,小懿,小E,E神,Esone,灵懿,疯神灵懿,疯神·灵懿,QQ:156568451,舍内网"/>
+<meta name="author" content="邱沼懿,小懿,小E,E神,Esone,QQ:156568451" />
+<meta name="Copyright" content="【疯·神】工作室,小懿,E神,Esone,邱沼懿,eexx.me,ex.eexx.me,www.shenei.net,ieexx.com" />
+
+<link rel="stylesheet" type="text/css" href="css/demo.css">
+<link rel="stylesheet" type="text/css" href="css/style3.css">
+<link rel="stylesheet" type="text/css" href="css/ui.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/style6.css"> -->
+<link rel="stylesheet" type="text/css" href="css/styleload.css" >
+<link href="css/jquery.jgrowl.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!-- <script type="text/javascript" src="js/form.js"></script> -->
+<script src="js/jquery.jgrowl.js" type="text/javascript"></script>
+<!-- <script type="text/javascript" src="js/modernizr.custom.79639.js"></script> -->
+<script src="js/modernizr.custom.63321.js"></script>
+	<script type="text/javascript" src="js/jquery.swatchbook.js"></script>
+	<script type="text/javascript" src="js/sketch.min.js"></script>
+	<script type="text/javascript" src="js/ui.js"></script>
+	<!-- <script type="text/javascript" src="js/jquery.placeholder.min.js"></script> -->
+
+<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+</head>
+<body id="body">
+	<script type="text/javascript">
+		(function($){
+			$(document).ready(function(){
+				setTimeout(function() {
+					$('#test2').jGrowl("欢迎光临小懿的个人主页~", { 
+						theme: 'smoke',
+						closer: false,
+						life: 999999 
+					});
+				}, 3000)
+			});
+		})(jQuery);
+	</script>
+	<div id="test2" class="bottom-left"></div>
+
+	<div id="Loading" class="demo-3 demo-dark" style="z-index:10002;position:fixed;margin-left:47%;margin-top:9%;display:none;">
+		<div class="container">
+					
+			<section class="main">
+				<!-- the component -->
+				<ul class="bokeh">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</section>
+		</div>
+	</div>
+
+
+	<script>
+		function CloseMouseEffects() {
+			demo.mousemove = function() {
+			};
+		}
+
+		function OpenMouseEffects() {
+
+			demo.mousemove = function() {
+
+				var particle, theta, force, touch, max, i, j, n;
+
+				for (i = 0, n = demo.touches.length; i < n; i++) {
+
+					touch = demo.touches[i], max = random(1, 4);
+					for (j = 0; j < max; j++) {
+						demo.spawn(touch.x, touch.y);
+					}
+
+				}
+			};
+
+		}
+		
+		function ChangeBackgroundWhite()
+		{ 
+
+		document.getElementById("body").style.background="#ddd url(images/bg.jpg) repeat top left";
+		}
+		
+		function ChangeBackgroundBlack()
+		{ 
+
+		document.getElementById("body").style.background="#ddd url(images/egg_shell.png) repeat top left";
+		}
+
+
+		var menu = ui.menu().add('Close Mouse Effects', CloseMouseEffects).add(
+				'Open Mouse Effects', OpenMouseEffects).add("ChangeBackgroundWhite",ChangeBackgroundWhite).add("ChangeBackgroundBlack",ChangeBackgroundBlack);
+
+		menu.on('Add item', function() {
+			console.log('added an item');
+		});
+
+		oncontextmenu = function(e) {
+			e.preventDefault();
+			menu.moveTo(e.pageX, e.pageY).show();
+		};
+	</script>
+
+
+	<div id="test" style=" position:fixed;top:0px;z-index:20;"></div>
+
+
+	<div class="container">
+		<header>
+			<img src="images/fumikaLogo.png" style="top:100px;">
+
+			<div class="support-note">
+				<!-- let's check browser support with modernizr -->
+				<!--span class="no-cssanimations">CSS animations are not supported in your browser</span-->
+				<span class="no-csstransforms">CSS transforms are not
+					supported in your browser</span>
+				<!--span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span-->
+				<span class="no-csstransitions">CSS transitions are not
+					supported in your browser</span> <span class="note-ie">Sorry, only
+					modern browsers.</span>
+			</div>
+
+		</header>
+
+		<div id="sb-container" class="sb-container">
+			<div data-href="http://ex.eexx.me">
+				<span class="sb-icon icon-eye"></span>
+				<h4>
+					<span>随心随笔</span>
+				</h4>
+			</div>
+			<div data-href="http://live.eexx.me">
+				<span class="sb-icon icon-flight"></span>
+				<h4>
+					<span>同居日志</span>
+				</h4>
+			</div>
+			<div data-href="http://music.eexx.me">
+				<span class="sb-icon icon-video"></span>
+				<h4>
+					<span>音乐主页</span>
+				</h4>
+			</div>
+			<div data-href="http://ex.eexx.me/album">
+				<span class="sb-icon icon-picture"></span>
+				<h4>
+					<span>相册</span>
+				</h4>
+			</div>
+			<div data-href="http://it.eexx.me">
+				<span class="sb-icon icon-cog"></span>
+				<h4>
+					<span>技术笔记</span>
+				</h4>
+			</div>
+			<div data-href="http://pm.eexx.me">
+				<span class="sb-icon icon-mobile"></span>
+				<h4>
+					<span>产品狗</span>
+				</h4>
+			</div>
+			<div data-href="http://sm.eexx.me">
+				<span class="sb-icon icon-globe"></span>
+				<h4>
+					<span>敏捷教练</span>
+				</h4>
+			</div>
+			<div data-href="http://podcasts.eexx.me">
+				<span class="sb-icon icon-video"></span>
+				<h4>
+					<span>临更新</span>
+				</h4>
+			</div>
+			<div data-href="http://sn.eexx.me">
+				<span class="sb-icon icon-download"></span>
+				<h4>
+					<span>舍内网</span>
+				</h4>
+			</div>
+			<div>
+				<h4>
+					<span>翻开小懿</span>
+				</h4>
+				<span class="sb-toggle">Click to open</span>
+			</div>
+		</div>
+		<!-- sb-container -->
+	</div>
+	
+	<div id="copyright">
+		Copyright &copy; 2009 - 2020  <a href="https://github.com/ee01" title="邱沼懿" target="_blank">Esone</a>.
+		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35020302033223" style="margin-left: 5px;">闽ICP备19000940号-1</a>
+	</div>
+
+
+	<div id="Jump"
+		style="position:fixed;z-index:999;text-align:center;display:none;top:45%;left:35%;right:35%">
+		<div>
+			<p style="color:#FFF;text-align:center">我在拼命的跳ing...</p>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(function() {
+			$('#sb-container').swatchbook({
+				center : 5,
+				// number of degrees that is between each item
+				angleInc : 15,
+				neighbor : 15,
+				// if it should be closed by default
+				initclosed : true,
+				// index of the element that when clicked, triggers the open/close function
+				// by default there is no such element
+				closeIdx : 9
+			});
+
+			console.log(window.innerHeight, $('#copyright').offset().top);
+			var cpMarginTop = window.innerHeight - $('#copyright').offset().top;
+			$('#copyright').css({marginTop: cpMarginTop>0 ? cpMarginTop : 30})
+		});
+	</script>
+
+	<script>
+		// ----------------------------------------
+		// Particle
+		// ----------------------------------------
+
+		function Particle(x, y, radius) {
+			this.init(x, y, radius);
+		}
+
+		Particle.prototype = {
+
+			init : function(x, y, radius) {
+
+				this.alive = true;
+
+				this.radius = radius || 10;
+				this.wander = 0.15;
+				this.theta = random(TWO_PI);
+				this.drag = 0.92;
+				this.color = '#fff';
+
+				this.x = x || 0.0;
+				this.y = y || 0.0;
+
+				this.vx = 0.0;
+				this.vy = 0.0;
+			},
+
+			move : function() {
+
+				this.x += this.vx;
+				this.y += this.vy;
+
+				this.vx *= this.drag;
+				this.vy *= this.drag;
+
+				this.theta += random(-0.5, 0.5) * this.wander;
+				this.vx += sin(this.theta) * 0.1;
+				this.vy += cos(this.theta) * 0.1;
+
+				this.radius *= 0.96;
+				this.alive = this.radius > 0.5;
+			},
+
+			draw : function(ctx) {
+
+				ctx.beginPath();
+				ctx.arc(this.x, this.y, this.radius, 0, TWO_PI);
+				ctx.fillStyle = this.color;
+				ctx.fill();
+			}
+		};
+
+		// ----------------------------------------
+		// Example
+		// ----------------------------------------
+
+		var MAX_PARTICLES = 280;
+		var COLOURS = [ '#69D2E7', '#A7DBD8', '#E0E4CC', '#F38630', '#FA6900',
+				'#FF4E50', '#F9D423' ];
+
+		var particles = [];
+		var pool = [];
+
+		var demo = Sketch.create({
+			container : document.getElementById('test')
+		});
+
+		demo.setup = function() {
+
+			// Set off some initial particles.
+			var i, x, y;
+
+			//  for ( i = 0; i < 20; i++ ) {
+			x = (demo.width * 0.5) + random(-100, 100);
+			y = (demo.height * 0.5) + random(-100, 100);
+			demo.spawn(0, 999);
+			// }
+		};
+
+		demo.spawn = function(x, y) {
+
+			if (particles.length >= MAX_PARTICLES)
+				pool.push(particles.shift());
+
+			particle = pool.length ? pool.pop() : new Particle();
+			particle.init(x, y, random(5, 40));
+
+			particle.wander = random(0.5, 2.0);
+			particle.color = random(COLOURS);
+			particle.drag = random(0.9, 0.99);
+
+			theta = random(TWO_PI);
+			force = random(2, 8);
+
+			particle.vx = sin(theta) * force;
+			particle.vy = cos(theta) * force;
+
+			particles.push(particle);
+		};
+
+		demo.update = function() {
+
+			var i, particle;
+
+			for (i = particles.length - 1; i >= 0; i--) {
+
+				particle = particles[i];
+
+				if (particle.alive)
+					particle.move();
+				else
+					pool.push(particles.splice(i, 1)[0]);
+			}
+		};
+
+		demo.draw = function() {
+
+			demo.globalCompositeOperation = 'lighter';
+
+			for ( var i = particles.length - 1; i >= 0; i--) {
+				particles[i].draw(demo);
+			}
+		};
+
+		demo.mousemove = function() {
+
+			var particle, theta, force, touch, max, i, j, n;
+
+			for (i = 0, n = demo.touches.length; i < n; i++) {
+
+				touch = demo.touches[i], max = random(1, 4);
+				for (j = 0; j < max; j++) {
+					demo.spawn(touch.x, touch.y);
+				}
+
+			}
+		};
+	</script>
+</body>
+</html>
